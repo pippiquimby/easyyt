@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple YouTube Video Player Iframe API</title>
+    <link rel="stylesheet" href="demo.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css">
+<style>
+ 
+
+</style>
+</head>
+<body>
+ <div class="row">
+
+  <div id="controls">
+ 
+ 
+  <!-- Playback State Modifiers -->
+  <div class="control-group">
+    <button type="button" id="play" class="btn-icon" aria-label="Play">
+      <i class="material-icons" aria-hidden="true">play_arrow</i>
+      <span>Play</span>
+    </button>
+ </div>
+
+  <div class="control-group" id="pause" >
+    <button type="button" class="btn-icon" aria-label="Pause">
+      <i class="material-icons" aria-hidden="true">pause</i>
+      <span>Pause</span>
+    </button>
+ </div>
+ 
+
+  <!-- Audio Controls -->
+  <div class="control-group">
+    <button type="button" id="mute-toggle" class="btn-icon" aria-label="Mute or Unmute">
+      <i id="mute" class="material-icons" aria-hidden="true">volume_up</i>
+      <span></span>
+    </button>
+ </div>
+
+ 
+  </div>
+    <div class="" id="main">
+ <div id="video-placeholder"></div>
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+
+ 
+</body>
+</html>
