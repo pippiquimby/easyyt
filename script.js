@@ -1,10 +1,8 @@
 var player,
     time_update_interval = 0;
 	let params = new URLSearchParams(document.location.search);
-let ytvideo = params.get("video") ; //  
+let ytvideo = params.get("video") ;  
  
-console.log(readCookie("ply_time"));
-
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('video-placeholder', {
         width: 600,
@@ -49,15 +47,15 @@ function initialize(){
 // This function is called by initialize()
 function updateTimerDisplay(){
     // Update current time text display.
-    $('#current-time').text(formatTime( player.getCurrentTime() ));
-    $('#duration').text(formatTime( player.getDuration() ));
+   // $('#current-time').text(formatTime( player.getCurrentTime() ));
+   // $('#duration').text(formatTime( player.getDuration() ));
 }
 
 
 // This function is called by initialize()
 function updateProgressBar(){
     // Update the value of our progress bar accordingly.
-    $('#progress-bar').val((player.getCurrentTime() / player.getDuration()) * 100);
+   // $('#progress-bar').val((player.getCurrentTime() / player.getDuration()) * 100);
 }
 
 
