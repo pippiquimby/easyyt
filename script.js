@@ -49,7 +49,8 @@ $('#pause').on('click', function () {
 });
 
 $('#replay').on('click', function () {
-    player.seekTo(seconds:0);
+ 
+    player.seekTo(0, true);
 });
 
 
