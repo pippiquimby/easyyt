@@ -49,7 +49,7 @@ $('#pause').on('click', function () {
 });
 
 $('#replay').on('click', function () {
-    player.seekTo(seconds:0, allowSeekAhead:Boolean):Void;
+    player.seekTo(seconds:0);
 });
 
 
