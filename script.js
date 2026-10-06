@@ -48,6 +48,12 @@ $('#pause').on('click', function () {
     player.pauseVideo();
 });
 
+$('#replay').on('click', function () {
+    player.seekTo(seconds:0, allowSeekAhead:Boolean):Void;
+});
+
+
+
 $('#mute-toggle').on('click', function() {
     const mute_toggle = $("#mute");
 
