@@ -53,7 +53,9 @@ $('#replay').on('click', function () {
     player.seekTo(0, true);
 });
 
-
+$('#back').on('click', function () {  
+    player.seekTo(player.getCurrentTime() - 10, true);
+});
 
 $('#mute-toggle').on('click', function() {
     const mute_toggle = $("#mute");
